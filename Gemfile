@@ -15,9 +15,9 @@ group :development, :test do
 end
 
 # <-- add this when you're ready to push to Heroku -->
-# group :production do
-#   gem 'pg'
-# end
+group :production do
+  gem 'pg'
+end
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
