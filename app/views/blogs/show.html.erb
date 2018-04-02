@@ -1,0 +1,50 @@
+<div class="blog-show-body">
+<div class="blog-title">
+<h2><%= @blog.title %></h2>
+</div>	
+
+<div class="blog-content">
+<%= @blog.content %>	
+</div>
+
+<div class="blog-comments">
+<%if current_user.id != @blog.user_id%>
+<%else%></br>
+<%= link_to 'Delete', blog_path, method: :delete, class: "delete-link" %> | 
+<a href="/blogs/<%= @blog.id%>/edit">Edit Blog</a><br/>
+<%end %>
+</div>
+
+<div class="blog-comments-area">
+<h3>Comments</h3>
+<hr>
+<% @blog.comments.each do |c| %>
+<div class="comment-user">User:  <%= c.user.username %></div>
+<div class="blog-comment">Comment:  <%= c.content %></div>
+	
+<%if c.user_id == current_user.id %>
+<div class="edit-link"><a href="/comments/<%= c.id%>/edit"> Edit Comment </a></div>
+
+<% end %>
+
+<% end %>
+<hr>
+</div>
+
+</div>
+
+
+<div class="new-comment-title">
+<h3>Create New Comment</h3>
+</div>
+
+<%= form_with(model: @comment, local: true) do |c| %>
+	<div><%= c.text_area :content, class: 	"comment-text-area"%></div>
+	<%=	c.hidden_field :blog_id, :value => @blog.id %>
+	<%=	c.hidden_field :user_id, :value => current_user.id %>
+	<%=	c.submit "Comment", class: "new-comment-btn"%>
+<% end %>
+
+<br>
+
+</div>

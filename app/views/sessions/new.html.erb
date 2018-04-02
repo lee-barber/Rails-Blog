@@ -1,0 +1,16 @@
+<!-- <h2>Login here</h2> -->
+
+<%= form_tag(login_path) do %>
+<div class="login-bar">
+<div class="login-item"><%= text_field_tag :username, "", placeholder: "Username", class: "username-field" %></div>
+<div class="login-item"><%= text_field_tag :password, "", placeholder: "Password", type: "password", class: "password-field" %></div>
+<div class="login-item"><%= submit_tag "Login", class: "login-button" %>
+</div>
+</div>
+
+<div class="logo-background"></div>
+
+<br><br>
+<div class="signup"><a href='/users/new'>Create Account</a></div></br>
+
+<% end %>	

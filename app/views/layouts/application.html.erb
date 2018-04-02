@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <title>Blograil</title>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<div class="nav-container">
+  	<nav class='navbar'>
+    <!-- <ul class="navbar_list"> -->
+     <% if logged_in? %>
+         <li class="navbar_item"><a href='/blogs/new'>Post</a></li>
+         <li class="navbar_item"><a href="/users/<%= current_user.id %>/edit">Account</a></li>
+         <li class="navbar_item"><a href='/users'>Users</a></li>
+         <li class="navbar_item"><a href='/blogs'>Feed</a></li>
+         <li class="navbar_item"><%= link_to 'Log out', '/logout', {method: 'post'} %></li>
+      <% end %>
+   </nav>
+</div>
+
+<div class="flash-message"><%= flash[:message] if flash[:message] %></div>
+
+
+
+    <%= yield %>
+  </body>
+</html>

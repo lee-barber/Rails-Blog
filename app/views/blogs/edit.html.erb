@@ -1,0 +1,11 @@
+<div class="h2-title">
+    <h2>Edit blog</h2>
+</div>
+<%= form_for @blog do |f| %>
+
+    <div class="edit-blog-text">Title:</div><%= f.text_field :title, class: "edit-blog-title" %></div>
+	<div class="edit-blog-text">Content:</div><%= f.text_area :content, class: "edit-blog-content" %></div>
+        <div>
+            <%= f.submit "Update", class: "edit-blog-btn" %>
+        </div>
+        <% end %>

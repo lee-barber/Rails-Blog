@@ -1,0 +1,13 @@
+<div class="blog-index-title">
+<h2>Blog Rail</h2></div>
+
+<div class="blog-list"
+<% @blogs.each do |b| %>
+
+<div class="blogs">
+<a href="/blogs/<%= b.id %>"></div>
+<div class="blogs"><%= b.title %></div></a>
+<div class="blogs"><%= b.content %></div>
+
+<% end %>
+</div>

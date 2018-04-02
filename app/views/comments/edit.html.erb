@@ -1,0 +1,7 @@
+<div class="h2-title"><h2>Edit comment</h2></div>
+
+<%= form_with(model: @comment, local: true) do |c| %>
+	<%=	c.text_area :content, class: "comment-content-area" %>	
+	<div><%= c.submit class: "update-comment-btn" %></div>
+<% end %>
+<div><%= link_to "Delete Comment", comment_path, method: :delete, class: "delete-link" %></div>

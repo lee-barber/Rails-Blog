@@ -1,0 +1,12 @@
+<div class="create-blog-title">
+    <h2>Create Blog	</h2>
+</div>
+<%= form_for @blog do |f| %>
+    <% f.hidden_field :user_id, :value => @user.id %>
+        <div class="title-text">Title:</div>
+            <%= f.text_field :title, class: "title-box"%>
+        <div class="content-text">Post:</div>
+            <%= f.text_area :content, class: "content-box" %>
+        <div><%= f.submit "Post", class: "post-blog-btn" %>
+            <% end %>
+        </div>	

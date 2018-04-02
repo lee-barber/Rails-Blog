@@ -1,0 +1,201 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// <------- Blog Index Page --------->
+
+.blog-index-title {
+	margin-left: 20px
+}
+
+.blogs {
+	margin: 10px;
+	// font-family: 'IBM Plex Sans Condensed', sans-serif;
+	width: 400px;
+	margin-left: 40px;
+}
+
+.blog-list {
+	width: 400px;
+	margin-left: 40px;
+}
+
+// <------- Create Blogs Page --------->
+
+.create-blog-title {
+	margin-left: 20px;
+}
+
+.title-text {
+	margin-left: 40px;
+}
+
+.title-box {
+	height: 20px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 300px;		
+}
+
+.content-text {
+	margin-left: 40px;
+}
+
+.content-area {
+	margin-left: 40px;
+	width: 400px;
+	height: 200px;
+	resize: none;
+}
+
+.post-blog-btn {
+	width: 100px;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-bottom: 20px;	
+}
+
+.content-box {
+	margin: 10px;
+	width: 300px;
+	height: 150px;
+	resize: none;
+	margin-left: 40px;	
+	font-size: 16px;
+}
+
+
+// <------- Show Blogs Page --------->
+
+.comment-text-area {
+	margin: 10px;
+	width: 300px;
+	height: 150px;
+	resize: none;
+}
+
+.blog-title {
+	width: 400px;
+	margin-left: 20px;
+}
+
+.blog-content {
+	width: 400px;
+	margin-left: 40px;
+}
+
+.blog-comments-area {
+	width: 400px;
+	margin-left: 40px;
+}
+
+.comment-user {
+	width: 400px;
+	// margin-left: 20px;
+}
+
+.blog-comment {
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+.edit-link {
+	width: 400px;
+	margin-bottom: 20px;	
+}
+
+.delete-link {
+	width: 400px;
+	margin-left: 40px;
+	margin-bottom: 20px;	
+}
+
+.new-comment-title {
+	margin-left: 40px;
+}
+
+.comment-text-area {
+	width: 300px;
+	height: 150px;
+	resize: none;
+	margin-left: 40px;	
+	font-size: 16px;
+}
+
+.new-comment-btn {
+	width: 100px;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-bottom: 20px;	
+}
+
+
+// <------- Edit Blogs Page --------->
+
+
+.edit-blog-title {
+	height: 20px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 300px;	
+}
+
+.edit-blog-text {
+	margin-left: 40px;
+}
+
+.h2-title {
+	margin-left: 20px;
+}
+
+.edit-blog-content {
+	margin: 10px;
+	width: 300px;
+	height: 150px;
+	resize: none;
+	margin-left: 40px;	
+	font-size: 16px;
+}
+
+.edit-blog-btn {
+	width: 100px;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-bottom: 20px;	
+}
+
+
+
+
+
+
+
+
+
+// .comment-name {
+// 	width: 400px;
+// 	margin-left: 20px;
+// }
+
+// .blog-comment {
+// 	width: 400px;
+// 	margin-left: 20px;
+// }
+
+// .blog-show-body a:link {
+// 	color:blue
+// }
+
+// .blog-show-body a:active {
+// 	color:blue
+// }
+
+// .blog-show-body a:visited {
+// 	color:blue
+// }
+
+// .blog-show-body a:hover {
+// 	color:blue
+// }

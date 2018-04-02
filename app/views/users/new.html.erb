@@ -1,0 +1,21 @@
+<h2>Create an Account</h2>
+<%=	 form_for  @user do |f| %>
+    <div class="newfirst-field">First Name:
+        <%= f.text_field :fname, class: "fname-box" %>
+    </div>
+    <div class="newlast-field">Last Name:
+        <%= f.text_field :lname, class: "lname-box" %>
+    </div>
+    <div class="newemail-field">Email:
+        <%= f.text_field :email, class: "newemail-box" %>
+    </div>
+    <div class="newuser-field">Username:
+        <%= f.text_field :username, class: "newuser-box" %>
+    </div>
+    <div class="newuserpw-field">Password:
+        <%= f.text_field :password, type: "password", class: "newuserpw-box" %>
+    </div>
+    <div>
+        <%= f.submit "Create", class: "create-user-submit-btn" %>
+    </div>
+    <% end %>

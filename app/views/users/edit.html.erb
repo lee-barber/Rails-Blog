@@ -1,0 +1,13 @@
+<div class="edit-profile-title">
+<h2>Edit Profile</h2>
+</div>
+
+<%= form_for @user do |f| %>
+
+<div class="edit-fname-field">First Name: <%= f.text_field :fname, class: "edit-fname-box"%></div>
+<div class="edit-lname-field">Last Name: <%= f.text_field :lname, class: "edit-lname-box" %></div>
+<div class="edit-email-field">Email: <%= f.text_field :email, class: "edit-email-box" %></div>
+<div class="edit-user-field">Username: <%= f.text_field :username, class: "edit-user-box" %></div>
+<div class="edit-pass-field">Password: <%= f.text_field :password, class: "edit-pass-box" %></div>
+<div><%= f.submit "Update", class: "edit-submit-btn"%></div>
+<% end %>
